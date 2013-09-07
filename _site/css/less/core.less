@@ -145,7 +145,7 @@ header {
 				}
 				&.book {
 					border:1px solid #cccccc;
-					background: url(../images/kent/v2/images/book.svg) no-repeat 8px;
+					background: url(/images/book.svg) no-repeat 8px;
 					padding-left:30px;
 					&:hover {
 						background:#eeeeee url(/images/book.svg) no-repeat 8px;
@@ -282,7 +282,7 @@ footer {
 		img {
 			border:6px solid #ffffff;
 			.box-shadow(0 0 4px rgba(0,0,0,0.3));
-			.size(300px, 300px);
+			.size(296px, 297px);
 			padding-bottom:4em;
 			background:white;
 		}
@@ -602,7 +602,7 @@ footer {
 		margin:0 1em 1em 1.1em;
 	}
 	#stylistPg .container {
-		.photo img {
+		.photo img.stylistPic {
 			.size(230px, 230px);
 		}
 	}
@@ -735,7 +735,9 @@ footer {
 	}
 	#stylistPg .container .photo {
 		margin-top:1.7em;
-		img {.size(190px, 190px);}
+		height:270px;
+		img {.size(208px, 208px);}
+		span {background-size:180px !important;}
 	}
 }
 
@@ -791,7 +793,7 @@ footer {
 	#stylistPg .container {
 		.photo {
 			float: none;
-			width: 202px;
+			width: 220px;
 			margin: 1em auto 2em;
 			padding-left:0;
 			background:none;
