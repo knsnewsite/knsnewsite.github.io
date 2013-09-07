@@ -1,0 +1,27 @@
+<section class="service-nav span3">
+	<ul class="nav">
+		<li{% if page.url == '/services/index.html' %} class="active"{% endif %}><a href="/services/">Haircuts<i></i></a></li>
+		<li{% if page.url == '/services/hair-color/index.html' %} class="active"{% endif %}><a href="/services/hair-color/">Hair Color<i></i></a></li>
+		<li{% if page.url == '/services/hair-extensions/index.html' %} class="active"{% endif %}><a href="/services/hair-extensions/">Extensions<i></i></a></li>
+		<li{% if page.url == '/services/styling/index.html' %} class="active"{% endif %}><a href="/services/styling/">Styling<i></i></a></li>
+		<li{% if page.url == '/services/keratin-treatments/index.html' %} class="active"{% endif %}><a href="/services/keratin-treatments/">Keratin Treatments<i></i></a></li>
+		<li{% if page.url == '/services/deep-conditioning/index.html' %} class="active"{% endif %}><a href="/services/deep-conditioning/">Deep Conditioning<i></i></a></li>
+		<li{% if page.url == '/services/bridal/index.html' %} class="active"{% endif %}><a href="/services/bridal/">Bridal<i></i></a></li>
+	</ul>
+</section>
+<section class="service-nav-touch">
+	<div class="btn-group">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		Choose a Service <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li{% if page.url == '/services/index.html' %} class="active"{% endif %}><a href="/services/">Haircuts</a></li>
+			<li{% if page.url == '/services/hair-color/index.html' %} class="active"{% endif %}><a href="/services/hair-color/">Hair Color</a></li>
+			<li{% if page.url == '/services/hair-extensions/index.html' %} class="active"{% endif %}><a href="/services/hair-extensions/">Extensions</a></li>
+			<li{% if page.url == '/services/styling/index.html' %} class="active"{% endif %}><a href="/services/styling/">Styling</a></li>
+			<li{% if page.url == '/services/keratin-treatments/index.html' %} class="active"{% endif %}><a href="/services/keratin-treatments/">Keratin Treatments</a></li>
+			<li{% if page.url == '/services/deep-conditioning/index.html' %} class="active"{% endif %}><a href="/services/deep-conditioning/">Deep Conditioning</a></li>
+			<li{% if page.url == '/services/bridal/index.html' %} class="active"{% endif %}><a href="/services/bridal/">Bridal</a></li>
+		</ul>
+	</div>
+</section>

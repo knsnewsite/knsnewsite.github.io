@@ -19,16 +19,16 @@
                     <img src="/images/kent-newton.svg" alt="Kent Newton Salon">
                 </a>
                 <ul class="pull-right nav nav-pills">
-                    <li class="dropdown active" class="dropdown">
+                    <li{% if page.url == '/stylists/index.html' or page.url == '/stylists/kent-newton/index.html' or page.url == '/stylists/lily-cirolo/index.html' or page.url == '/stylists/rodin-cole/index.html' or page.url == '/stylists/taylor-ellis/index.html' or page.url == '/stylists/jamie-macklin/index.html' or page.url == '/stylists/kimberly-griffin/index.html' or page.url == '/stylists/dana-morse/index.html' or page.url == '/stylists/amanda-pierce/index.html' or page.url == '/stylists/rebecca-omansky/index.html' or page.url == '/stylists/katie-mcdaniel/index.html' or page.url == '/our-salon/index.html' or page.url == '/artists/index.html' %} class="dropdown active"{% endif %} class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/stylists/">Stylists</a></li>
+                            <li><a href="/team/">Team</a></li>
                             <li><a href="/our-salon/">Salon</a></li>
                             <li><a href="/artists/">Artists</a></li>
                         </ul>
                     </li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/contact/">Contact</a></li>
+                    <li{% if page.url == '/services/index.html' or page.url == '/services/hair-color/index.html' or page.url == '/services/styling/index.html' or page.url == '/services/keratin-treatments/index.html' or page.url == '/services/hair-extensions/index.html' or page.url == '/services/deep-conditioning/index.html' or page.url == '/services/bridal/index.html' %} class="active"{% endif %}><a href="/services/">Services</a></li>
+                    <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="/contact/">Contact</a></li>
                     <li class="bookApp"><a class="book" href="http://uappointment.com/kentnewton" target="_blank"><strong>Book Appointments</strong></a></li>
                 </ul>
             </header>
@@ -39,55 +39,3 @@
 <style>
     header .sub-nav span a, .sub-nav-touch span a{background: url(/images/kn-social.svg) no-repeat;}
 </style>
-	<section class="content row-fluid">
-		<div class="span12">
-			<div id="header" class="stylist">
-	<div class="overlay">
-		<section class="container">
-			<a class="back" href="/stylists/">&laquo; Back to Stylists</a>
-			<h1 class="title-head">Rebecca Omansky</h1>
-		</section>
-	</div>
-</div>
-<div id="stylistPg">
-	<section class="container">
-		<div class="photo">
-			<img src="../../images/stylists/kn-full.jpg">
-		</div>
-		<section class="bioCopy">
-			<p>Rebecca's bio here</p>
-		</section>
-	</section>
-</div>
-
-<style>
-	#header {
-		background: url(../../images/stylists/stylist-head.jpg) no-repeat center center;
-		background-size:cover;
-	}
-</style>
-
-		</div>
-	</section>
-<section class="footer row-fluid">
-	<div class="span1"></div>
-	<div class="span10">
-		<footer>
-			<section class="sub-nav-touch">
-				<p><span><a href="https://www.facebook.com/kentnewtonsalon" target="_blank">Facebook</a></span> <span><a class="twitter" href="https://twitter.com/kentnewtonsalon" target="_blank">Twitter</a></span></p>
-			</section>
-			<ul class="pull-left">
-				<li>1315 Washington Street, Boston, MA 02118</li>
-				<li>617.426.2640</li>
-				<li><a href="mailto:kent@kentnewtonsalon.com">kent@kentnewtonsalon.com</a></li>
-			</ul>
-			<p>&copy;2013 Kent Newton Salon, All Rights Reserved</p>
-		</footer>
-	</div>
-	<div class="span1"></div>
-</section>
-</body>
-</html>
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>

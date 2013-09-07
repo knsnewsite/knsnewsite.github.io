@@ -1,156 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Kent Newton Salon | Boston MA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/responsive.css" rel="stylesheet" media="screen">
-    <link href="/css/launch.css" rel="stylesheet" media="screen">
-</head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-    <section class="row-fluid">
-        <div class="span1"></div>
-        <div class="span10">
-            <header>
-                <section class="sub-nav">
-                    <p>617.426.2640&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://maps.google.com/maps?q=1315+Washington+Street,+Boston,+MA+02118&ie=UTF-8&hq=&hnear=0x89e37a6c31008d5f:0x3be20584038d3a48,1315+Washington+St,+Boston,+MA+02118&gl=us&ei=NSKhUYnhFdO84APg0oGQDw&ved=0CC4Q8gEwAA">Find Us</a>&nbsp;&nbsp;&nbsp;<span><a href="https://www.facebook.com/kentnewtonsalon" target="_blank">Facebook</a></span> <span ><a class="twitter" href="https://twitter.com/kentnewtonsalon" target="_blank">Twitter</a></span></p>
-                </section>
-                <a href="/" class="brand">
-                    <img src="/images/kent-newton.svg" alt="Kent Newton Salon">
-                </a>
-                <ul class="pull-right nav nav-pills">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/stylists/">Stylists</a></li>
-                            <li><a href="/our-salon/">Salon</a></li>
-                            <li><a href="/artists/">Artists</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="/services/">Services</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li class="bookApp"><a class="book" href="http://uappointment.com/kentnewton" target="_blank"><strong>Book Appointments</strong></a></li>
-                </ul>
-            </header>
-        </div>
-        <div class="span1"></div>
-    </section>
-
-<style>
-    header .sub-nav span a, .sub-nav-touch span a{background: url(/images/kn-social.svg) no-repeat;}
-</style>
-	<section class="content row-fluid">
-		<div class="span12">
-			<div id="header">
-				<div class="overlay">
-					<section class="container">
-						<h1 class="title-head">Services</h1>
-					</section>
-				</div>
-			</div>
-			<section id="services">
-				<section class="container">
-					<section class="service-nav span3">
-	<ul class="nav">
-		<li><a href="/services/">Haircuts<i></i></a></li>
-		<li class="active"><a href="/services/hair-color/">Hair Color<i></i></a></li>
-		<li><a href="/services/hair-extensions/">Extensions<i></i></a></li>
-		<li><a href="/services/styling/">Styling<i></i></a></li>
-		<li><a href="/services/keratin-treatments/">Keratin Treatments<i></i></a></li>
-		<li><a href="/services/deep-conditioning/">Deep Conditioning<i></i></a></li>
-	</ul>
-</section>
-<section class="service-nav-touch">
-	<div class="btn-group">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-		Choose a Service <span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu">
-			<li><a href="/services/">Haircuts</a></li>
-			<li class="active"><a href="/services/hair-color/">Hair Color</a></li>
-			<li><a href="/services/hair-extensions/">Extensions</a></li>
-			<li><a href="/services/styling/">Styling</a></li>
-			<li><a href="/services/keratin-treatments/">Keratin Treatments</a></li>
-			<li><a href="/services/deep-conditioning/">Deep Conditioning</a></li>
-		</ul>
-	</div>
-</section>
-					<section class="service-content description span9">
+---
+layout: services
+---
+<section class="service-content description span9">
 	<h3>Hair Color</h3>
 	<p>From light, shimmering blonde to warm, chocolaty brunette, and silky, glossy black, your stylist will consult with you on every dimension of your color.</p>
 </section>
 <section  class="service-content span9">
 	<div class="single-col">
-		<table class="color">
-			<tr>
-				<td>Single Process</td>
-				<td class="cost"><span>starts at</span> $80</td>
-			</tr>
-			<tr>
-				<td>Partial Foil</td>
-				<td class="cost"><span>starts at</span> $130</td>
-			</tr>
-			<tr>
-				<td>Full Foil</td>
-				<td class="cost"><span>starts at</span> $160</td>
-			</tr>
-			<tr>
-				<td>Hairline Highlight</td>
-				<td class="cost"><span>starts at</span> $85</td>
-			</tr>
-			<tr>
-				<td>Balayage</td>
-				<td class="cost"><span>starts at</span> $130</td>
-			</tr>
-			<tr>
-				<td>Gloss</td>
-				<td class="cost"><span>starts at</span> $40</td>
-			</tr>
-			<tr>
-				<td>Men's Gloss Blending</td>
-				<td class="cost"><span>starts at</span> $40</td>
-			</tr>
-			<tr>
-				<td>Color Remover</td>
-				<td class="cost"><span>starts at</span> $40</td>
-			</tr>
-			<tr>
-				<td>Dimensional Color Package<p>Single process color, hairline highlights, Kerastase Deep Conditioning Treatment and a gloss</p></td>
-				<td class="cost"><span>starts at</span> $205</td>
-			</tr>
-		</table>
+		<p>Single Process <span class="pricing">$80</span></p>
+		<p>Partial Foil <span class="pricing">$130</span></p>
+		<p>Full Foil <span class="pricing">$160</span></p>
+		<p>Hairline Highlight <span class="pricing">$85</span></p>
+		<p>Balayage <span class="pricing">$130</span></p>
+		<p>Gloss <span class="pricing">$40</span></p>
+		<p>Men's Grey Blending <span class="pricing">$40</span></p>
+		<p>Color Correction <i>based on consultation</i></p>
+		<p class="withDescrip">Dimensional Color Package <i>starts at<span class="cost">$205</span></i></p><p class="descrip">Single process color, hairline highlights, Kerastase Deep Conditioning Treatment and a gloss.</p>
 	</div>
 </section>
-				</section>
-			</section>
-		</div>
-	</section>
-<section class="footer row-fluid">
-	<div class="span1"></div>
-	<div class="span10">
-		<footer>
-			<section class="sub-nav-touch">
-				<p><span><a href="https://www.facebook.com/kentnewtonsalon" target="_blank">Facebook</a></span> <span><a class="twitter" href="https://twitter.com/kentnewtonsalon" target="_blank">Twitter</a></span></p>
-			</section>
-			<ul class="pull-left">
-				<li>1315 Washington Street, Boston, MA 02118</li>
-				<li>617.426.2640</li>
-				<li><a href="mailto:kent@kentnewtonsalon.com">kent@kentnewtonsalon.com</a></li>
-			</ul>
-			<p>&copy;2013 Kent Newton Salon, All Rights Reserved</p>
-		</footer>
-	</div>
-	<div class="span1"></div>
-</section>
-</body>
-</html>
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
-<style>
-	#header {
-		background: url(/images/services/header-services.jpg) no-repeat center center;
-		background-size:cover;
-	}
-</style>
