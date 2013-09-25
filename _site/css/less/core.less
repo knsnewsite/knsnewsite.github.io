@@ -121,12 +121,33 @@ header {
 	a.brand {
 		float:left;
 		img {.size(75px, 283px);}
+	}/*
+	.nav>li>.dropdown-menu:before {
+		content: '';
+		display: inline-block;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid #ccc;
+		border-bottom-color: rgba(0,0,0,0.2);
+		position: absolute;
+		top: -7px;
+		left: 9px;
 	}
+	.nav>li>.dropdown-menu:after {
+		content: '';
+		display: inline-block;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid #fff;
+		position: absolute;
+		top: -6px;
+		left: 10px;
+	}*/
 	ul.nav {
 		margin-top:47px;
 		width:505px;
 		li {
-			margin-left:18px;
+			margin-left:12px;
 			font-size: 1em;
 			&.bookApp-touch {display: none;}
 			&.bookApp {
@@ -134,14 +155,18 @@ header {
 			}
 			a {
 				font-family: Arial, Helvetica Nueu, sans-serif;
-				.border-radius(50px);
+				.border-radius(4px);
 				.medium-gray;
-				padding:7px 10px 8px;
+				padding:7px 10px 6px;
+				font-size:12px;
+				text-transform: uppercase;
 				&:hover {
-					.border-radius(50px);
+					.border-radius(4px);
+					background:none;
+					color:#565656;
 				}
 				&:focus {
-					.border-radius(50px);
+					.border-radius(4px);
 				}
 				&.book {
 					border:1px solid #cccccc;
@@ -153,6 +178,7 @@ header {
 				}
 				&.dropdown-toggle .caret {
 					border-top-color:gray;
+					margin:4px 0 0 6px;
 				}
 				&.dropdown-toggle:hover .caret {border-top-color:gray;}
 			}
@@ -174,6 +200,7 @@ header {
 					a {
 						text-align:left;
 						background:none;
+						padding-left:15px;
 						.medium-gray;
 						&:hover {
 							.border-radius(0);
@@ -487,7 +514,7 @@ footer {
 			color:black;
 			padding-left:6px;
 		}
-		td span.cost {
+		span.cost {
 			text-align:left;
 			float:right;
 			font-family: georgia, serif;
@@ -511,6 +538,17 @@ footer {
 				}
 			}
 		}
+	}
+}
+.service-content .single-col .condition-service {
+	img {float:left; width:235px; margin-right:2em;}
+	.service-details {
+		width:400px;
+		padding-left:250px;
+		.cost {
+			display:block;
+		}
+		p {line-height:24px;}
 	}
 }
 
