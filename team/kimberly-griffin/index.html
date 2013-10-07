@@ -1,32 +1,37 @@
 ---
 layout: main
 ---
-<div id="header" class="stylist">
-	<div class="overlay">
-		<section class="container">
-			<a class="back" href="/team/">&laquo; Back to Stylists</a>
-			<h1 class="title-head">Kimberly Griffin</h1>
-		</section>
+<div id="header" class="stylist overlay">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="headContent">
+				<a class="back" href="/team/">&laquo; Back to Team</a>
+				<h1 class="title-head">Kimberly Griffin</h1>
+			</div>
+		</div>
 	</div>
 </div>
-<div id="stylistPg">
-	<section class="container">
-		<div class="photo">
-			<img src="../../images/team/kn-full.jpg">
-			<span class="s">Stylist</span>
-		</div>
-		<section class="bioCopy">
+<div class="container-fluid">
+	<div id="stylistPg" class="row-fluid">
+		<aside class="sidebar span5">
+			<div class="sidebarContent">
+				<img src="../../images/team/jp-full.jpg">
+				<span class="s">Stylist</span>
+			</div>
+		</aside>
+		<section class="conten span7">
+			<div class="contentWrapper">
 			<p>With a never-ending supply of energy and enthusiasm, Kimberly makes sure that anyone who sits in her chair looks and feels like a superstar.</p>
 			
 			<p>She has the ability to take on any hairstyle you desire and the skills to make you look flawless. After an appointment with Kimberly, you’ll be begging for more!</p>
+			</div>
 		</section>
-	</section>
+	</div>
 </div>
-
 <style>
 	#header {
 		background: url(../../images/team/stylist-head.jpg) no-repeat center center;
 		background-size:cover;
 	}
-	#stylistPg .container .photo span {background: url(../../images/team/title-s.svg) no-repeat center center;}
+	#stylistPg .sidebar .sidebarContent span {background: url(../../images/team/title-s.svg) no-repeat center center;}
 </style>

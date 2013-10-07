@@ -1,30 +1,35 @@
 ---
 layout: main
 ---
-<div id="header" class="stylist">
-	<div class="overlay">
-		<section class="container">
-			<a class="back" href="/team/">&laquo; Back to Stylists</a>
-			<h1 class="title-head">Amanda Pierce</h1>
+<div id="header" class="stylist overlay">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="headContent">
+				<a class="back" href="/team/">&laquo; Back to Team</a>
+				<h1 class="title-head">Amanda Pierce</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div id="stylistPg" class="row-fluid">
+		<aside class="sidebar span5">
+			<div class="sidebarContent">
+				<img src="../../images/team/km-full2.jpg">
+				<span class="sa">Salon Assistant</span>
+			</div>
+		</aside>
+		<section class="conten span7">
+			<div class="contentWrapper">
+				<p>Bio here</p>
+			</div>
 		</section>
 	</div>
 </div>
-<div id="stylistPg">
-	<section class="container">
-		<div class="photo">
-			<img src="../../images/team/kn-full.jpg">
-			<span>Salon Assistant</span>
-		</div>
-		<section class="bioCopy">
-			<p>Amanda's bio here</p>
-		</section>
-	</section>
-</div>
-
 <style>
 	#header {
 		background: url(../../images/team/stylist-head.jpg) no-repeat center center;
 		background-size:cover;
 	}
-	#stylistPg .container .photo span {background: url(../../images/team/title-sa.svg) no-repeat center center;}
+	#stylistPg .sidebar .sidebarContent span {background: url(../../images/team/title-sa.svg) no-repeat center center;}
 </style>

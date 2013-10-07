@@ -1,7 +1,12 @@
 {% include header.html %}
-	<section class="content row-fluid">
-		<div class="span12">
-			{{ page.content }}
-		</div>
-	</section>
+{% if page.url == '/index.html' %}
+<section class="banner">
+	<p>Kent Newton Salon</p>
+</section>
+{% endif %}
+{% if page.url != '/index.html' %}
+<section class="pageContent">
+	{{ page.content }}
+</section>
+{% endif %}
 {% include footer.html %}

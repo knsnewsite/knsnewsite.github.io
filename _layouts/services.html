@@ -1,21 +1,25 @@
 {% include header.html %}
-	<section class="content row-fluid">
-		<div class="span12">
-			<div id="header">
-				<div class="overlay">
-					<section class="container">
-						<h1 class="title-head">Services</h1>
-					</section>
+<div id="header">
+	<div class="overlay">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="headContent">
+					<h1 class="title-head">Services</h1>
 				</div>
 			</div>
-			<section id="services">
-				<section class="container">
-					{% include service-nav.html %}
-					{{ page.content }}
-				</section>
-			</section>
 		</div>
-	</section>
+	</div>
+</div>
+<section class="pageContent">
+	<div id="services" class="container-fluid">
+		<section class="service-nav span3">
+			{% include service-nav.html %}
+		</section>
+		<section id="serviceContent" class="span10">
+			{{ page.content }}
+		</section>
+	</div>
+</section>
 {% include footer.html %}
 
 <style>

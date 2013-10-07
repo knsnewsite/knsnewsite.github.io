@@ -8,54 +8,56 @@
     <link href="/css/launch.css" rel="stylesheet" media="screen">
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-    <section class="row-fluid">
-        <div class="span1"></div>
-        <div class="span10">
-            <header>
-                <section class="sub-nav">
-                    <p>617.426.2640&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://maps.google.com/maps?q=1315+Washington+Street,+Boston,+MA+02118&ie=UTF-8&hq=&hnear=0x89e37a6c31008d5f:0x3be20584038d3a48,1315+Washington+St,+Boston,+MA+02118&gl=us&ei=NSKhUYnhFdO84APg0oGQDw&ved=0CC4Q8gEwAA">Find Us</a>&nbsp;&nbsp;&nbsp;<span><a href="https://www.facebook.com/kentnewtonsalon" target="_blank">Facebook</a></span> <span ><a class="twitter" href="https://twitter.com/kentnewtonsalon" target="_blank">Twitter</a></span></p>
-                </section>
-                <a href="/" class="brand">
-                    <img src="/images/kent-newton.svg" alt="Kent Newton Salon">
-                </a>
-                <ul class="pull-right nav nav-pills">
-                    <li class="dropdown active" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/team/">Team</a></li>
-                            <li><a href="/our-salon/">Salon</a></li>
-                            <li><a href="/artists/">Artists</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li class="bookApp"><a class="book" href="http://uappointment.com/kentnewton" target="_blank"><strong>Book Appointments</strong></a></li>
-                </ul>
-            </header>
-        </div>
-        <div class="span1"></div>
+    <section class="container-fluid">
+        <header>
+            <section class="sub-nav">
+                <p>617.426.2640&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://maps.google.com/maps?q=1315+Washington+Street,+Boston,+MA+02118&ie=UTF-8&hq=&hnear=0x89e37a6c31008d5f:0x3be20584038d3a48,1315+Washington+St,+Boston,+MA+02118&gl=us&ei=NSKhUYnhFdO84APg0oGQDw&ved=0CC4Q8gEwAA">Find Us</a>&nbsp;&nbsp;&nbsp;<span><a href="https://www.facebook.com/kentnewtonsalon" target="_blank">Facebook</a></span> <span ><a class="twitter" href="https://twitter.com/kentnewtonsalon" target="_blank">Twitter</a></span></p>
+            </section>
+            <a href="/" class="brand">
+                <img src="/images/kent-newton.svg" alt="Kent Newton Salon">
+            </a>
+            <ul class="pull-right nav nav-pills">
+                <li class="dropdown active" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/team/">Team</a></li>
+                        <li><a href="/our-salon/">Salon</a></li>
+                        <li><a href="/artists/">Artists</a></li>
+                    </ul>
+                </li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li class="bookApp"><a class="book" href="http://uappointment.com/kentnewton" target="_blank"><strong>Book Appointments</strong></a></li>
+            </ul>
+        </header>
     </section>
 
 <style>
     header .sub-nav span a, .sub-nav-touch span a{background: url(/images/kn-social.svg) no-repeat;}
 </style>
-	<section class="content row-fluid">
-		<div class="span12">
-			<div id="header" class="stylist">
-	<div class="overlay">
-		<section class="container">
-			<a class="back" href="/team/">&laquo; Back to Stylists</a>
-			<h1 class="title-head">Dana Morse</h1>
-		</section>
+
+
+<section class="pageContent">
+	<div id="header" class="stylist overlay">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="headContent">
+				<a class="back" href="/team/">&laquo; Back to Team</a>
+				<h1 class="title-head">Dana Morse</h1>
+			</div>
+		</div>
 	</div>
 </div>
-<div id="stylistPg">
-	<section class="container">
-		<div class="photo">
-			<img src="../../images/team/kn-full.jpg">
-			<span class="s">Stylist</span>
-		</div>
-		<section class="bioCopy">
+<div class="container-fluid">
+	<div id="stylistPg" class="row-fluid">
+		<aside class="sidebar span5">
+			<div class="sidebarContent">
+				<img src="../../images/team/dm-full.jpg">
+				<span class="s">Stylist</span>
+			</div>
+		</aside>
+		<section class="conten span7">
+			<div class="contentWrapper">
 			<p>Dana started out with an education in the arts. He had  been involved in the creative world of hair early on during his exploits in the music industry with bands and music types since he was a teenager. Finally, after a colorful and varied work history, Dana dove head first into his new passion for hair and fashion.</p>
 
 			<p>Over the last five years he built quite a reputation for himself at Liquid Hair Studios. During that time Dana became a color educator for Joico. He is also certified with Beth Minardi Signature, Redkin, Matrix/ Logics, Kevin Murphy, Global Keratin and Brazilian Blowout while also taking numerous styling/cutting classes and seeking out education to always further himself.</p>
@@ -63,20 +65,19 @@
 			<p>Dana has built up a diverse clientele that covers the every day styling of short hair, long hair, curly hair, the avant-garde and everything else in between for both men and women.</p>
 
 			<p>Don’t feel you have to be a rock star to work with Dana, but you may feel like one when you’re done!</p>
+			</div>
 		</section>
-	</section>
+	</div>
 </div>
-
 <style>
 	#header {
 		background: url(../../images/team/stylist-head.jpg) no-repeat center center;
 		background-size:cover;
 	}
-	#stylistPg .container .photo span {background: url(../../images/team/title-s.svg) no-repeat center center;}
+	#stylistPg .sidebar .sidebarContent span {background: url(../../images/team/title-s.svg) no-repeat center center;}
 </style>
+</section>
 
-		</div>
-	</section>
 <section class="footer row-fluid">
 	<div class="span1"></div>
 	<div class="span10">
