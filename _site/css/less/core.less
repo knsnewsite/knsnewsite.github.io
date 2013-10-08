@@ -1126,6 +1126,15 @@ footer {
 }
 */
 @media (max-width: 320px) {
+	header {padding:1em 0; margin-top:15px;}
+	header ul.nav-pills {
+		width:auto;
+		margin-bottom: 15px;
+		li.bookApp {
+			margin-top:15px;
+			margin-left:0;
+		}
+	}
 	#services .service-content.description, #services .service-content {
 		width:auto;
 	}
@@ -1140,6 +1149,31 @@ footer {
 		float: none;
 		display: block;
 		text-align: center;
+		padding-left:0;
+		margin-bottom: 0.9em;
+	}
+	.service-content .single-col i {
+		float:none;
+		display: block;
+		margin-right:0;
+		span.cost {
+			padding-left:0;
+			display: block;
+		}
+	}
+	#services .service-content p.descrip {
+		line-height: 23px;
+		span.cost {
+			margin-bottom:0.3em;
+		}
+	}
+	#services .service-content p.withDescrip {
+		span.cost {
+			margin-bottom:0.3em;
+		}
+	}
+	.service-content .single-col .condition-service img {
+		margin-bottom:1em;
 	}
 }
 /* Large desktop 
