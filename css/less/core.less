@@ -1056,6 +1056,9 @@ footer {
 }
 
 /*portrait phones and down */
+@media (max-width: 500px) {
+
+}
 /*@media (max-width: 500px) {
 	header ul.nav-pills {
 		margin:15px 0 15px;
@@ -1121,13 +1124,24 @@ footer {
 		margin:0 0.6em 0.5em 0.8em;
 	}
 }
-
+*/
 @media (max-width: 320px) {
-	#stylists .stylist {
-		width:42%;
-		margin:0 0.6em 0.5em 0.8em;
+	#services .service-content.description, #services .service-content {
+		width:auto;
 	}
-}*/
+	#services .service-content p:last-child {
+		margin-bottom:0;
+	}
+	#services .service-nav-touch .btn-group .dropdown-menu {
+		left:16px;
+		width:286px;
+	}
+	.service-content .single-col span.cost {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
 /* Large desktop 
 @media (min-width: 1200px) {} */
 
