@@ -8,10 +8,18 @@
 body { min-height:540px; }
 
 // Shared styles 
+
+.ptext {
+	margin-top: 20px;
+	color: #4b4b4b;
+	line-height: 22px;
+	font-size: 1.1em;
+}
+
 .sub-nav p { float:right; }
 
 .pageContent {
-	background:#EFEFEF;
+	background:#F1F1F1;
 	border-bottom:1px solid #DEDEDE;
 	margin-bottom:2em;
 }
@@ -51,18 +59,14 @@ body { min-height:540px; }
 	.headContent {padding:1em 0;}
 	h1 {
 		font-weight:100;
-		margin-top:0.5em;
+		margin-top:1.3em;
 		color:white;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 17px;
-		font-size: 55px;
+		font-size: 46px;
 		margin-right:-15px;
 	}
 	&.stylist h1.title-head {
 		text-align: left;
 		font-size: 3em;
-		letter-spacing: 5px;
 	}
 	a.back {
 		color:#FFFFFF;
@@ -210,18 +214,15 @@ footer {
 	background: url(/images/header-1.jpg) no-repeat center center;
 	background-size: cover;
 	width:100%;
-	height:499px;
+	height:500px;
 	margin:0 auto 2em;
 }
 
 /* Stylists */
 #stylists {
 	.stylist-pics {
-		margin:2.4em auto;
-		width: 85%;
-		background: white;
+		margin:0 auto 2.4em auto;
 		padding: 1.3em 3em;
-		border:1px solid #E7E7E7;
 	}
 	.row {
 		.clearfix;
@@ -243,7 +244,8 @@ footer {
 				text-decoration: none;
 				p {color:#565656;}
 				img {
-					.box-shadow(0 1px 4px rgba(0,0,0,0.2));
+					.box-shadow(0 0px 4px rgba(100,100,100,0.2));
+					border-color: #D6D6D6;
 				}
 			}
 		}
@@ -253,7 +255,7 @@ footer {
 			border-radius: 4px;
 			border: 1px solid #E7E7E7;
 			box-shadow: none;
-			background: #F3F3F3;
+			background: white;
 			width:138px;
 		}
 	}
@@ -307,7 +309,10 @@ footer {
 #header.salon-head {
 	.clearfix;
 }
-#salon .container {
+#salon {
+	padding:2em 0;
+}
+#salon {
 	.testi {
 		color:#747474;
 		background:white;
@@ -324,7 +329,6 @@ footer {
 		text-align: center;
 		padding:1.7em 5.4em;
 		margin:0.8em 0;
-		border-bottom:1px solid rgba(0,0,0,0.1);
 		blockquote {
 			background:url(/images/salon/quote-bg2.png)no-repeat top center;
 			font-size: 1.2em;
@@ -349,7 +353,7 @@ footer {
 	ul {
 		li {
 			line-height: 40px;
-			a {color:#787a7b;}
+			a {color:#787a7b; &:hover {background:#f1f1f1;}}
 			&.active {
 				a {
 					color:#29353c;
@@ -427,7 +431,7 @@ footer {
 			border-bottom:1px solid #eeeeee;
 			margin-bottom:0;
 			&:last-child {border-bottom:0;}
-			.clearfix;
+			clear:both;
 			span.pricing {
 				float:right;
 				font-family: georgia, serif;
@@ -573,6 +577,38 @@ footer {
 		}
 	}
 }
+
+// Artists
+.artist-callout {
+	background: white;
+	border-radius: 4px;
+	font-size: 1.3em;
+	padding: 1em 2em 0.6em;
+	box-sizing: border-box;
+	line-height: 1.4em;
+	margin-top: 1.5em;
+	color: #949494;
+	border: 1px solid #E0E0E0;
+}
+#salon-artists {
+	padding:2em 0;
+	.artist {
+		.clearfix;
+		margin-bottom: 3em;
+		.info.span7 {
+			margin-top:0;
+			p {.ptext;}
+			margin-left:0; 
+			padding-right:3em;
+		}
+		img {
+			float:right;
+			margin-top:1.6em;
+			.box-shadow(0 3px 4px rgba(0,0,0,0.4))
+		}
+	}
+	hr {border-bottom:0; border-top-color:#D8D8D8;}
+}
 /*
 @media (max-width: 1024px) {
 	#stylists .stylist {
@@ -699,10 +735,9 @@ footer {
 		width:88%;
 		padding:1.3em 3em;
 		.stylist {
-			width:21%;
+			width:24%;
 			&:first-child {margin-left:0;}
-			margin:0 1em 1em 1.1em;
-			&:nth-child(5) {margin:0 1em 0 0;}
+			margin:0 0 1em 0;
 			&:nth-child(4) {margin-right:0;}
 			&:nth-child(8) {margin-right:0;}
 			&:nth-child(9) {margin-left:0;}
@@ -772,6 +807,7 @@ footer {
 	header {
 		padding:0 2em;
 	}
+	#header .headContent { padding:3em 2em; }
 	#header h1 {
 		font-size:45px;
 		margin-top:0.7em;
@@ -790,13 +826,17 @@ footer {
 		}
 	}
 	#stylists .stylist-pics {
+		width:auto;
+		padding:1.3em 4.5em;
+	}
+	#stylists .stylist-pics {
 		border:0;
 		margin:0 auto;
 		.stylist {
-			width:28%;
-			&:nth-child(4),&:nth-child(7),&:nth-child(10) {margin-left:0;margin-right:1em;}
-			&:nth-child(5), &:nth-child(9) {margin-left:1em;}
-			&:nth-child(8) {margin-right:1em;}
+			width:30%;
+			margin-right:1.4em;
+			&:nth-child(3),&:nth-child(6),&:nth-child(9) { margin-right:0; }
+			&:nth-child(4), &:nth-child(8) { margin-right:1.4em; }
 
 		}
 	}
@@ -906,6 +946,9 @@ footer {
 		display: block;
 		img {width:85%;}
 	}
+	#header h1 {
+		margin-right:0;
+	}
 	#header.salon-head .container p {
 		display:none;
 	}
@@ -925,23 +968,21 @@ footer {
 		}
 	}
 	#header {
-		height:100px;
 		a.back {display:none;}
 		h1.title-head {
 	        font-weight:100;
 			text-align: center;
-			margin-top:0.3em;
-			font-size:2.5em;
-			letter-spacing: 11px;
-			font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-			-webkit-font-smoothing: antialiased;
+			font-size:3.3em;
+			margin-top:0;
 		}
 		&.stylist h1.title-head {
 			font-size: 2.5em;
-			letter-spacing: 5px;
 			line-height:38px;
 			text-align: center;
 		}
+	}
+	#stylists .stylist-pics {
+		padding:1.3em 3.3em;
 	}
 	#stylists .stylist {
 		width:27%;
@@ -1134,10 +1175,15 @@ footer {
 			margin-left:0;
 		}
 	}
+	#header h1.title-head {
+		margin-top:0.3em;
+		font-size:3.1em;
+	}
+	#header .headContent {
+		padding:2em 0 0;
+	}
 	#header.stylist h1.title-head {
 		font-size:2.2em;
-		margin-top:0.6em;
-		letter-spacing: 2px;
 	}
 	#stylists .stylist-pics { 
 		width:auto;
@@ -1150,12 +1196,8 @@ footer {
 	#stylists .stylist-pics .stylist img {
 		width:200px;
 	}
-	#stylists .stylist-pics .stylist:nth-child(4),
-	#stylists .stylist-pics .stylist:nth-child(6),
-	#stylists .stylist-pics .stylist:nth-child(7),
-	#stylists .stylist-pics .stylist:nth-child(8),
-	#stylists .stylist-pics .stylist:nth-child(9) {
-		margin:0;
+	#stylists .stylist-pics .stylist {
+		margin:0 !important;
 	}
 	#services .service-content.description, #services .service-content {
 		width:auto;
