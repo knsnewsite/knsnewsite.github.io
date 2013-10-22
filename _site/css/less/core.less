@@ -5,7 +5,7 @@
 .light-gray { color:#a1a1a1; }
 .medium-gray { color:#656565; }
 
-body { min-height:540px; }
+body { min-height:540px; padding:0;}
 
 // Shared styles 
 
@@ -926,7 +926,9 @@ footer {
 	}
 }
 
-
+@media (max-width: 500px) {
+	header ul.nav {width:auto;}
+}
 @media (max-width: 320px) {
 	header {
 		padding:1em 0; 
@@ -947,6 +949,7 @@ footer {
 		}
 		.headContent {
 			padding:2em 0 0;
+			&.two {padding-top:1.1em;}
 		}
 		&.stylist h1.title-head {
 			font-size:3em;
