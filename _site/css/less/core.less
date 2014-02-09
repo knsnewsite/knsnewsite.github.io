@@ -101,20 +101,20 @@ header {
 			.medium-gray;
 		}
 		font-size:1em;
-	}
-	span a {
-		position:relative;
-		top:-5px;
-		margin-left:5px;
-		.replace;
-		.size(32px, 32px);
-		display: inline-block;
-		&.twitter {
-			background-position: -33px 0;
-			&:hover {background-position:-33px -33px;}
-		}
-		&:hover {
-			background-position:0 -33px;
+		span a {
+			position:relative;
+			top:-5px;
+			margin-left:5px;
+			.replace;
+			.size(32px, 32px);
+			display: inline-block;
+			&.twitter {
+				background-position: -33px 0;
+				&:hover {background-position:-33px -33px;}
+			}
+			&:hover {
+				background-position:0 -33px;
+			}
 		}
 	}
 	.brand {
@@ -258,47 +258,46 @@ footer {
 
 /* Individual Stylist Pages */
 
+.bio-bg { background:#F1C8C4; }
 #stylistPg {
-	.bio-bg {
-	}
 	.back {
-		.light-gray;
-		display: block;
+		color:#fff;
+		display: inline-block;
 		margin:10px 0;
 		&:hover {
-			text-decoration: none;
-			.medium-gray;
+			text-decoration: underline;
 		}
 	}
 	.content {
-		text-align: center;
-		width: 700px;
-		margin: 0 auto;
+		text-align: left;
+		width: 800px;
+		margin: 3em auto 5em;
 	}
 	img {
-		.border-radius(400px);
-		width: 215px;
+		float:left;
+		width: 185px;
 		margin-bottom: 1em;
 		border:5px solid white;
+		box-shadow: 0 15px 12px -10px rgba(0,0,0,0.3);
 	}
+	h1, p { margin-left:235px; }
 	h1 {
 		font-weight: 500;
 		margin-bottom:12px;
 	}
 	.title {
-		.light-gray;
+		color:#fff;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		margin-left:40px;
 	}
 	.bio {
 		margin:2em 0 3em;
 		font-size: 1.2em;
 		line-height: 1.8em;
-		text-align: left;
 	}
 	p {
 		font-size:1.1em;
-		font-family: "ff-meta-serif-web-pro", serif;
 		margin-bottom: 25px;
 	}
 	.back-touch { display:none; }
@@ -630,10 +629,9 @@ footer {
 		}
 	}
 	#stylistPg {
-		.contentWrapper {
-			padding:1.3em;
-			.sidebar img {width:250px;}
-		}
+		padding:0 1.5em;
+		.contentWrapper { padding:1.3em; }
+		.content { width:inherit; }
 	}
 	#salon .video { padding:2em 10%; }
 	#contact {
@@ -982,10 +980,17 @@ footer {
 				display:block;
 				margin:0 auto;
 				width:auto;
-				img { width:200px; }
+				img { width:185px; }
 				margin:0 !important;
 			}
 		}
+	}
+	#stylistPg {
+		img { float:none; }
+		.content { text-align: center; }
+		h1, p { margin-left:0; }
+		.bio { text-align: left; }
+		.title { margin-left:0; }
 	}
 	#salon { 
 		padding:1.4em; 
