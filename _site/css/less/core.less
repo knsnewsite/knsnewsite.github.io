@@ -1015,11 +1015,16 @@ footer {
 	#services {
 		.service-content.description, #services .service-content {
 			width:auto;
+			padding:1em;
 		}
 		.service-content {
-			width:auto;
+			width: auto;
 			p:last-child {
 				margin-bottom:0;
+			}
+			&.description p {
+				font-size: 16px;
+				line-height: 22px;
 			}
 			p.descrip {
 				line-height: 23px;
