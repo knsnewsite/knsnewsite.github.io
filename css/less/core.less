@@ -272,29 +272,29 @@ footer {
 	.back-mobile { display:none; }
 	.content {
 		text-align: left;
-		width: 800px;
+		width: 850px;
 		margin: 3em auto 5em;
 	}
 	img {
 		float:left;
-		width: 185px;
+		width: 225px;
 		margin-bottom: 1em;
 		border:5px solid white;
 		box-shadow: 0 15px 12px -10px rgba(0,0,0,0.3);
 	}
-	h1, p { margin-left:235px; }
 	h1 {
 		font-weight: 500;
-		margin-bottom:12px;
+		margin-bottom:0;
 	}
 	.title {
 		color:#fff;
+		display: inline-block;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		margin-left:40px;
+		margin-bottom: 1em;
 	}
 	.bio {
-		margin:2em 0 3em;
+		margin:2em 0 3em 275px;
 		font-size: 1.2em;
 		line-height: 1.8em;
 	}
@@ -991,8 +991,12 @@ footer {
 		img { float:none; }
 		.content { text-align: center; margin-bottom:3em;}
 		h1, p { margin-left:0; }
-		.bio { text-align: left; }
-		.title { margin-left:0; }
+		.bio {
+			text-align: left;
+			margin-left:0;
+			h1, .title { text-align: center; }
+			.title { display: block; }
+		}
 		.back {
 			display: inherit;
 			text-align: center;
