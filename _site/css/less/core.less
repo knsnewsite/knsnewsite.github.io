@@ -115,10 +115,13 @@ header {
 	}
 	.brand {
 		float:left;
-		img {
-			.size(75px, 283px);
-			margin-top:32px;
-		}
+		background: url(/images/kns-logo-spt.png) no-repeat;
+		display: block;
+		.size(75px, 283px);
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		margin-top:32px;
 	}
 	.nav {
 		margin-top:47px;
@@ -1105,5 +1108,12 @@ footer {
 		border-right:0;
 		margin-right:0;
 		padding-right:0;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	header .brand {
+		background-position:0 -41px;
+		background-size:100%;
 	}
 }
