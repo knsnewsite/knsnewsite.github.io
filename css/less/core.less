@@ -103,35 +103,35 @@ header {
 		.phone {
 			cursor: default;
 			&:hover { .light-gray; }
+			padding-right:14px;
+			border-right:1px solid #dadada;
 		}
 		font-size:1em;
-		span a {
-			position:relative;
-			top:-5px;
-			margin-left:5px;
-			.replace;
-			.size(32px, 32px);
+		.icon-twitter, .icon-facebook {
+			font-size:30px;
+		}
+		li {
 			display: inline-block;
-			&.twitter {
-				background-position: -33px 0;
-				&:hover {background-position:-33px -33px;}
-			}
-			&:hover {
-				background-position:0 -33px;
-			}
+			vertical-align: middle;
+			margin-left:10px;
 		}
 	}
 	.brand {
 		float:left;
-		img {.size(75px, 283px);}
+		img {
+			.size(75px, 283px);
+			margin-top:27px;
+		}
 	}
 	.nav {
 		margin-top:47px;
 		li {
-			margin-left:12px;
+			margin-left:10px;
 			font-size: 1em;
+			display: inline-block;
+			&:first-child { margin-left: 0;}
 			&.bookApp-touch {display: none;}
-			&.bookApp { margin-left:25px;}
+			&.bookApp { margin-left:16px;}
 			&.active a {
 				background:#999999;
 				color:white;
@@ -156,12 +156,20 @@ header {
 			}
 			&:focus { .border-radius(4px); }
 			&.book {
-				border:1px solid #cccccc;
-				background: url(/images/book.svg) no-repeat 8px;
-				padding-left:30px;
+				border:1px solid #ccc;
+				margin-top:0;
+				padding:6px 10px 3px;
 				&:hover {
-					background:#eeeeee url(/images/book.svg) no-repeat 8px;
+					background:#eeeeee;
+					.icon-calendar { color:#777; }
 				}
+			}
+			.icon-calendar {
+				font-size:20px;
+				color:#b8b8b8;
+				vertical-align: middle;
+				bottom: 2px;
+				margin-right: 5px;
 			}
 			&.dropdown-toggle .caret {
 				border-top-color:gray;
