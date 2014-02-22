@@ -107,9 +107,6 @@ header {
 			border-right:1px solid #dadada;
 		}
 		font-size:1em;
-		.icon-twitter, .icon-facebook {
-			font-size:30px;
-		}
 		li {
 			display: inline-block;
 			vertical-align: middle;
@@ -120,18 +117,19 @@ header {
 		float:left;
 		img {
 			.size(75px, 283px);
-			margin-top:27px;
+			margin-top:32px;
 		}
 	}
 	.nav {
 		margin-top:47px;
+		width: 540px;
 		li {
 			margin-left:10px;
 			font-size: 1em;
 			display: inline-block;
 			&:first-child { margin-left: 0;}
 			&.bookApp-touch {display: none;}
-			&.bookApp { margin-left:16px;}
+			&.bookApp { float:right;}
 			&.active a {
 				background:#999999;
 				color:white;
@@ -181,6 +179,7 @@ header {
 			background:rgba(255,255,255,0.9);
 			li {
 				margin:0;
+				display: block;
 				a {
 					text-align:left;
 					background:none;
@@ -196,6 +195,7 @@ header {
 		}
 	}
 }
+.icon-twitter, .icon-facebook { font-size:30px; }
 
 // Footer 
 footer {
@@ -222,7 +222,14 @@ footer {
 	}
 	p { float:right; }
 }
-.sub-nav-touch { display:none; }
+.sub-nav-touch {
+	display:none;
+	li {
+		border-right:none;
+		padding-right:0;
+		margin:0 4px;
+	}
+}
 
 /* Home Page */ 
 .banner {
@@ -540,7 +547,7 @@ footer {
 	}
 	.hrs {
 		float:left;
-		margin:0 2em 2.5em 0;
+		margin:0 5em 2.5em 0;
 		p {color:#656A6D;font-size:1.1em;margin-left:20px;}
 	}
 	h3 {
@@ -550,15 +557,13 @@ footer {
 		line-height: 22px;
 	}
 	.social {
-		p span {display:inline-block;margin:8px 15px 0 0;}
-		p span a {
-			.replace;
-			.size(45px, 45px);
-			&.twitter {
-				background-position: -46px 0;
-				&:hover {background-position:-46px -47px;}
+		li {
+			display:inline-block;
+			margin:8px 15px 0 0;
+			.icon-twitter, .icon-facebook {
+				font-size: 45px;
+				.light-gray;
 			}
-			&:hover {background-position:0 -47px;}
 		}
 	}
 	.inquire {
@@ -637,6 +642,7 @@ footer {
 			li:first-child {margin-left:0}
 		}
 	}
+	header a.brand img { margin-top:0; }
 	#header .headContent { padding:1em 1.3em; }
 	#stylists .stylist-pics {
 		margin:0.5em auto;
@@ -832,6 +838,7 @@ footer {
 				li {display:block;}
 			}
 		}
+		.nav li.bookApp { float:none; }
 	}
 	#header {
 		h1 {
