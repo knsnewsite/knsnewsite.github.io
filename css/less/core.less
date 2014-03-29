@@ -25,9 +25,8 @@ body { font-family: "proxima-nova", Helvetica, sans-serif; }
 
 .ptext {
 	margin-top: 20px;
-	color: #4b4b4b;
-	line-height: 22px;
-	font-size: 1.1em;
+	line-height: 1.4em;
+	font-size: 1.2em;
 }
 .sub-nav p { float:right; }
 .pageContent {
@@ -584,16 +583,19 @@ footer {
 }
 
 // Artists
-.artist-callout {
+
+.artist-callout, .past-artists {
 	background: white;
 	border-radius: 4px;
-	font-size: 1.3em;
 	padding: 1em 2em 0.6em;
+	border: 1px solid #E0E0E0;
+}
+.artist-callout {
+	font-size: 1.3em;
 	box-sizing: border-box;
 	line-height: 1.4em;
 	margin-bottom:1.5em;
 	color: #949494;
-	border: 1px solid #E0E0E0;
 }
 #salon-artists {
 	padding:2em 0;
@@ -612,7 +614,66 @@ footer {
 			.box-shadow(0 3px 4px rgba(0,0,0,0.4));
 		}
 	}
-	hr {border-bottom:0; border-top-color:#D8D8D8;}
+	hr {border-bottom:0; border-top-color:#D8D8D8;} // used for multiple artists on display at once
+}
+.past-artists {
+	padding:1em 2em 2em;
+	margin-bottom:3em;
+	.clearfix;
+	ul { margin:0; }
+	li {
+		float: left;
+		width: 30%;
+		&:nth-child(2) { margin:0 5%; }
+		-webkit-transition: background .15s;
+		-moz-transition: background .15s;
+		-o-transition: background .15s;
+		transition: background .15s;
+	}
+	h4 { 
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: normal;
+		margin-bottom: 2em;
+	}
+	p { .ptext; }
+	.past-artist {
+		display: block;
+		text-align: center;
+		&:hover {
+			.thumb-container:after {
+				border: 8px solid #fff;
+			}
+		}
+	}
+	.thumb-container {
+		margin: 0 auto 1.5em auto;
+		width: 90%;
+		padding-bottom: 68%;
+		position: relative;
+		background: #151515;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			left: -5px;
+			bottom: -5px;
+			border: 3px solid #fff;
+			-webkit-transition: all .15s;
+			-moz-transition: all .15s;
+			-o-transition: all .15s;
+			transition: all .15s;
+		}
+	}
+	.thumb {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 /* Portrait tablet to landscape and desktop*/
@@ -1008,6 +1069,7 @@ footer {
 		&.stylist h1.title-head {
 			font-size:3em;
 		}
+		&.art-head .title-head span { display: none; }
 	}
 	#stylists {
 		.stylist-pics { 
@@ -1051,6 +1113,15 @@ footer {
 		.video { padding:2em 0; }
 	}
 	.artist-callout { padding:1em 1.4em .6em; }
+	.past-artists {
+		text-align: center;
+		.past-artist {
+			float: none;
+			width: 100%;
+			&:nth-child(2) { margin:0 0 3em 0; }
+			margin-bottom:3em;
+		}
+	}
 	#services {
 		.service-content.description, #services .service-content {
 			width:auto;
