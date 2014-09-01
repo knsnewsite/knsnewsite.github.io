@@ -1,5 +1,5 @@
-<section class="footer row-fluid">
-	<div class="span12">
+<section class="footer container-fluid">
+	<div class="row">
 		<footer>
 			<section class="sub-nav-touch">
 				<ul>
@@ -20,4 +20,32 @@
 </html>
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script src="/js/ekko-lightbox.js"></script>
+<script src="//rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function ($) {
+
+		// delegate calls to data-toggle="lightbox"
+		$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+			event.preventDefault();
+			return $(this).ekkoLightbox({
+				onShown: function() {
+					if (window.console) {
+						return console.log('Checking our the events huh?');
+					}
+				}
+			});
+		});
+
+		//Programatically call
+		$('#open-image').click(function (e) {
+			e.preventDefault();
+			$(this).ekkoLightbox();
+		});
+		$('#open-youtube').click(function (e) {
+			e.preventDefault();
+			$(this).ekkoLightbox();
+		});
+	});
+</script>
 <script src="/js/bootstrap.min.js"></script>

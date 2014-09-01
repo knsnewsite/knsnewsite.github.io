@@ -2,22 +2,26 @@
 <div id="header">
 	<div class="overlay">
 		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="headContent">
-					<h1 class="title-head">Services</h1>
-				</div>
+			<div class="headContent">
+				<h1 class="title-head">Services</h1>
 			</div>
 		</div>
 	</div>
 </div>
 <section class="pageContent">
 	<div id="services" class="container-fluid">
-		<section class="service-nav span3">
-			{% include service-nav.html %}
-		</section>
-		<section id="serviceContent" class="span9">
-			{{ page.content }}
-		</section>
+		<div class="row">
+			<section class="service-nav">
+				<div class="col-sm-3">
+					{% include service-nav.html %}
+				</div>
+			</section>
+			<section id="serviceContent">
+				<div class="col-sm-9">
+					{{ page.content }}
+				</div>
+			</section>
+		</div>
 	</div>
 </section>
 {% include footer.html %}

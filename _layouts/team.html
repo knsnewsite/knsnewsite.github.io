@@ -1,15 +1,22 @@
 {% include header.html %}
-<div id="header" class="stylist">
-	<div class="overlay">
-		<section class="container">
-			<a class="back" href="/team/">&laquo; Back to Stylists</a>
-			<h1 class="title-head">Katie M<i style="text-transform:none;font-style:normal;">c</i>Daniel</h1>
-		</section>
+<div class="bio-bg">
+	<div class="container-fluid">
+		<div id="stylistPg">
+			<a class="back" href="/team/">&laquo; Back to Team</a>
+			<div class="row">
+				<section class="content">
+					<div class="col-sm-3">
+						<img src="{{ page.image }}" alt="team member">
+					</div>
+					<div class="bio col-sm-9">
+						<h1 class="title-head">{{ page.team-name }}</h1>
+						<span class="title">{{ page.position }}</span>
+						{{ page.content}}
+						<a class="back-mobile" href="/team/">&laquo; Back to Team</a>
+					</div>
+				</section>
+			</div>
+		</div>
 	</div>
 </div>
-<section class="pageContent">
-	<div class="container-fluid">
-		{{ page.content }}
-	</div>
-</section>
 {% include footer.html %}

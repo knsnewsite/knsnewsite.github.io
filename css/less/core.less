@@ -5,7 +5,11 @@
 .light-gray { color:#a1a1a1; }
 .medium-gray { color:#656565; }
 
-body { min-height:540px; padding:0; }
+body {
+	margin: 0;
+	min-height:540px;
+	padding:0;
+}
 
 // typekit FONT
 .wf-loading {
@@ -113,17 +117,13 @@ header {
 		}
 	}
 	.brand {
-		float:left;
-		background: url(/images/kns-logo-spt.png) no-repeat;
+		float: left;
 		display: block;
-		.size(75px, 283px);
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-		margin-top:32px;
+		width: 283px;
+		margin-top: 32px;
 	}
 	.nav {
-		margin-top:47px;
+		margin: 42px 0 20px;
 		li {
 			margin-left:10px;
 			font-size: 1em;
@@ -134,26 +134,26 @@ header {
 			&.active a {
 				background:#999999;
 				color:white;
+				.caret {border-top-color:white;}
 				&:hover {
 					background:#999999;
 					.caret {border-top-color:white;}
 				}
 			}
-			&.open .dropdown-toggle { color:white; }
 		}
 		a {
 			font-family: "proxima-nova", Helvetica Nueu, sans-serif;
-			.border-radius(4px);
+			border-radius: 4px;
 			.medium-gray;
 			padding:7px 10px 6px;
 			font-size:15px;
 			text-transform: uppercase;
 			&:hover {
-				.border-radius(4px);
+				border-radius:4x);
 				background:none;
 				color:#565656;
 			}
-			&:focus { .border-radius(4px); }
+			&:focus { border-radius:4x); }
 			&.book {
 				border:1px solid #ccc;
 				margin-top:0;
@@ -172,7 +172,7 @@ header {
 			}
 			&.dropdown-toggle .caret {
 				border-top-color:gray;
-				margin:4px 0 0 6px;
+				margin: -2px 0 0 6px;
 			}
 			&.dropdown-toggle:hover .caret {border-top-color:gray;}
 		}
@@ -181,13 +181,14 @@ header {
 			li {
 				margin:0;
 				display: block;
-				a {
-					text-align:left;
-					background:none;
-					padding-left:15px;
+				> a {
+					text-transform: none;
+					text-align: left;
+					background: none;
+					padding-left: 15px;
 					.medium-gray;
 					&:hover {
-						.border-radius(0);
+						border-radius:0;
 						background:#e2e2e2;
 						color:#656565;
 					}
@@ -199,11 +200,11 @@ header {
 .icon-twitter, .icon-facebook { font-size:30px; }
 
 // Footer 
-footer {
-	margin:0 auto 5em auto;
+.footer {
+	margin:3em auto 5em auto;
 	font-size:0.8em;
 	max-width:960px;
-	ul {margin-left:0;}
+	ul {margin-left: 0; padding-left: 0;}
 	li {
 		list-style: none;
 		display:inline;
@@ -246,14 +247,12 @@ footer {
 #stylists {
 	.stylist-pics {
 		margin-bottom:2.4em;
-		padding: 1.3em 0;
-		text-align:center;
+		padding: 1.5em 50px;
+		text-align: center;
 	}
 	.row { .clearfix; }
 	.stylist {
-		display:inline-block;
 		text-align: center;
-		margin:0 0.9em 1em;
 		a {
 			p {
 				text-transform:uppercase;
@@ -275,7 +274,7 @@ footer {
 			border: 1px solid #E7E7E7;
 			box-shadow: none;
 			background: white;
-			width:138px;
+			width: 100%;
 		}
 	}
 }
@@ -284,7 +283,7 @@ footer {
 
 .bio-bg { background:#F1C8C4; }
 #stylistPg {
-	min-height: 400px;
+	min-height: 500px;
 	.back {
 		color:#fff;
 		display: inline-block;
@@ -296,19 +295,18 @@ footer {
 	.back-mobile { display:none; }
 	.content {
 		text-align: left;
-		width: 850px;
 		margin: 3em auto 5em;
 	}
 	img {
 		float:left;
-		width: 225px;
 		margin-bottom: 1em;
 		border:5px solid white;
 		box-shadow: 0 15px 12px -10px rgba(0,0,0,0.3);
+		width: 100%;
 	}
 	h1 {
 		font-weight: 500;
-		margin-bottom:0;
+		margin:0;
 	}
 	.title {
 		color:#fff;
@@ -318,7 +316,8 @@ footer {
 		margin-bottom: 1em;
 	}
 	.bio {
-		margin:2em 0 3em 275px;
+		margin:0 0 3em;
+		padding-left: 2em;
 		font-size: 1.2em;
 		line-height: 1.8em;
 	}
@@ -332,12 +331,15 @@ footer {
 /* Salon */
 #header.salon-head { .clearfix; }
 #salon {
-	.video { padding:2em 20%; }
+	padding:2em 0;
+	.video {
+		margin: 1em 5em 4em;
+	}
 	.wistia_embed {
 		box-shadow: 0 15px 18px -10px rgba(0,0,0,0.5);
 		box-sizing:border-box;
 	}
-	padding:2em 0;
+	img { width: 100%; }
 	.testi {
 		color:#747474;
 		background:white;
@@ -373,12 +375,12 @@ footer {
 
 /* Services*/
 .service-nav {
-	float:left;
 	margin:2.5em 0;
 	li {
 		line-height: 40px;
-		a {
+		> a {
 			color:#787a7b;
+			padding: 0;
 			&:hover { background:#f1f1f1; }
 		}
 		&.active a {
@@ -406,7 +408,6 @@ footer {
 	&.description {
 		font-size: 1.2em;
 		line-height: 24px;
-		margin-top:2em;
 		padding:2em 3em 2em 3em;
 		h3 {margin-top:0; color:#565656;}
 		p {margin-bottom:0;}
@@ -507,6 +508,52 @@ footer {
 		}
 	}
 }
+
+// bridal lightbox (ekko)
+.ekko-lightbox-nav-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	a {
+		z-index: 100;
+		display: block;
+		width: 49%;
+		height: 100%;
+		padding-top: 45%;
+		font-size: 30px;
+		color: #fff;
+		text-shadow: 2px 2px 4px #000;
+		opacity: 0;
+		filter: dropshadow(color=#000000, offx=2, offy=2);
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		&:empty { width: 49%; }
+		&:hover {
+			text-decoration: none;
+			opacity: 1;
+		}
+	}
+}
+
+.ekko-lightbox .glyphicon-chevron-left {
+	left: 0;
+	float: left;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.ekko-lightbox .glyphicon-chevron-right {
+	right: 0;
+	float: right;
+	padding-right: 30px;
+	text-align: right;
+}
+
 .service-content .single-col .condition-service {
 	.clearfix;
 	margin-bottom:2em;
@@ -587,93 +634,39 @@ footer {
 .artist-callout, .past-artists {
 	background: white;
 	border-radius: 4px;
-	padding: 1em 2em 0.6em;
 	border: 1px solid #E0E0E0;
 }
 .artist-callout {
 	font-size: 1.3em;
 	box-sizing: border-box;
 	line-height: 1.4em;
-	margin-bottom:1.5em;
+	padding: 1em 1.2em 0.5em;
+	margin:3em 0;
 	color: #949494;
 }
 #salon-artists {
-	padding:2em 0;
 	.artist {
-		.clearfix;
 		margin-bottom: 3em;
-		.info.span7 {
-			margin-top:0;
-			p {.ptext;}
-			margin-left:0; 
-			padding-right:3em;
-		}
-		img {
-			float:right;
-			margin-top:1.6em;
-			.box-shadow(0 3px 4px rgba(0,0,0,0.4));
-		}
+		h3 { margin: 0; }
+		p {.ptext;}
+		img { .box-shadow(0 3px 4px rgba(0,0,0,0.4)); }
 	}
-	hr {border-bottom:0; border-top-color:#D8D8D8;} // used for multiple artists on display at once
+	img {
+		width: 100%;
+	}
+	hr {border-bottom:0; border-top-color:#D8D8D8;} // when multiple artists are on display at once
 }
 .past-artists {
-	padding:1em 2em 2em;
-	margin-bottom:3em;
-	.clearfix;
-	ul { margin:0; }
-	li {
-		float: left;
-		width: 30%;
-		&:nth-child(2) { margin:0 5%; }
-		-webkit-transition: background .15s;
-		-moz-transition: background .15s;
-		-o-transition: background .15s;
-		transition: background .15s;
-	}
+	padding: 1em 1.5em;
+	margin-bottom: 4em;
 	h4 { 
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: normal;
-		margin-bottom: 2em;
 	}
+	img { margin: 1em 0 0; }
 	p { .ptext; }
-	.past-artist {
-		display: block;
-		text-align: center;
-		&:hover {
-			.thumb-container:after {
-				border: 8px solid #fff;
-			}
-		}
-	}
-	.thumb-container {
-		margin: 0 auto 1.5em auto;
-		width: 90%;
-		padding-bottom: 68%;
-		position: relative;
-		background: #151515;
-		&:after {
-			content: "";
-			position: absolute;
-			top: -5px;
-			right: -5px;
-			left: -5px;
-			bottom: -5px;
-			border: 3px solid #fff;
-			-webkit-transition: all .15s;
-			-moz-transition: all .15s;
-			-o-transition: all .15s;
-			transition: all .15s;
-		}
-	}
-	.thumb {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+	.past-artist { text-align: center; }
 }
 
 /* Portrait tablet to landscape and desktop*/
@@ -826,10 +819,6 @@ footer {
 				width:90%;
 				text-align: left;
 				font-family: Helvetice Nueu, Arial, sans-serif;
-				.caret {
-					position:relative;
-					top:8px;
-				}
 			}
 			.dropdown-menu {
 				left:30px;
