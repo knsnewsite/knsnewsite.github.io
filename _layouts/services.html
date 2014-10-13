@@ -4,7 +4,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="headContent">
-					<h1 class="title-head">{{ page.service-title }}</h1>
+					<h1 {% if page.service-title == 'Keratin Treatments' or page.service-title == 'Hair Extensions' %} class="title-head long-title" {% else %} class="title-head"{% endif %}>{{ page.service-title }}</h1>
 				</div>
 			</div>
 		</div>
