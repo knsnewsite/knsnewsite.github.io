@@ -118,7 +118,10 @@ header {
 		display: block;
 		width: 283px;
 		margin-top: 32px;
-		svg { height: 76px }
+		svg {
+			height: 76px;
+			max-width: 100%;
+		}
 	}
 	.nav {
 		margin: 42px 0 20px;
@@ -691,7 +694,7 @@ header {
 		h1 {margin-right:0;}
 		ul.nav {
 			float:left;
-			margin-top:24px;
+			margin-top: 15px;
 			width: 100%;
 			li:first-child {margin-left:0}
 			.bookApp { float:none; }
@@ -712,8 +715,12 @@ header {
 	.footer {
 		margin-bottom:3em;
 		text-align: center;
-		.left {float:none;}
+		.left {
+			float: none;
+			padding-left: 0;
+		}
 		.right {float:none;}
+		li { display: inline-block; margin-bottom: 5px; }
 	}
 	.artist-callout { margin: 0 0 3em; }
 	#serviceContent { margin: 15px auto 15px; }
