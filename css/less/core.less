@@ -66,7 +66,7 @@ body { font-family: "proxima-nova", Helvetica, sans-serif; }
 		border-bottom:1px solid rgba(0,0,0,0.1);
 		height:132px;
 	}
-	.headContent { padding:1em 0; }
+	.headContent { padding-top: 1em; }
 	h1 {
 		margin-top:1.3em;
 		color:white;
@@ -91,6 +91,7 @@ body { font-family: "proxima-nova", Helvetica, sans-serif; }
 // Header 
 header {
 	.clearfix;
+	padding: 0 15px;
 	margin:20px auto 0 auto;
 	.sub-nav {
 		height:35px;
@@ -122,6 +123,10 @@ header {
 			height: 76px;
 			max-width: 100%;
 		}
+	}
+	ul.right {
+		float: right;
+		width: 540px;
 	}
 	.nav {
 		margin: 42px 0 20px;
@@ -510,9 +515,12 @@ header {
 	}
 }
 
-.bridal-pic {
-	margin-bottom: 20px;
+.bridal-pics .source {
+	text-transform: none;
+	font-size: 0.85em;
+	margin: 1em 0 2em;
 }
+.bridal-pic { margin-bottom: 20px; }
 
 // bridal lightbox (ekko)
 .ekko-lightbox-nav-overlay {
@@ -545,7 +553,9 @@ header {
 	}
 }
 
-.ekko-lightbox .modal-dialog { margin: 1.5em; }
+.ekko-lightbox .modal-dialog {
+	margin: 1.5em auto !important;
+}
 
 .ekko-lightbox .glyphicon-chevron-left {
 	left: 0;
@@ -678,6 +688,17 @@ header {
 	.past-artist { text-align: center; }
 }
 
+// custom break for header
+@media (max-width: 865px) {
+	header {
+		.brand { margin-top: 0; }
+		ul.right {
+			float: left;
+			margin-top: 15px;
+		}
+	}
+}
+
 /* Portrait tablet to landscape and desktop*/
 @media (min-width: 768px) and (max-width: 900px) {
 	#services .nav { margin-left:35px; }
@@ -692,17 +713,11 @@ header {
 
 // Tablet
 @media (max-width: 768px) {
-	header { 
-		padding: 0 1.3em; 
+	header {
 		h1 {margin-right:0;}
 		ul.nav {
-			float:left;
-			margin-top: 15px;
-			width: 100%;
 			li:first-child {margin-left:0}
-			.bookApp { float:none; }
 		}
-		.brand { margin-top:0; }
 	}
 	#header .headContent { padding:1em 1.3em; }
 	#stylists .stylist-pics {
@@ -730,7 +745,6 @@ header {
 
 @media (max-width: 600px) {
 	body {padding:0;}
-	header { padding:0 1.5em; }
 	#header {
 		.headContent { padding:1em 2em; }
 		h1 {
@@ -838,25 +852,43 @@ header {
 	}
 }
 
-/*landscape phones and down */
-@media (max-width: 568px) {
+// break for header/nav
+@media (max-width: 620px) {
+	.sub-nav { display:none; }
 	header {
 		.brand {
 			float:none;
 			text-align: center;
 			margin:0 auto;
-			img {width:85%;}
 		}
 		ul.nav-pills {
+			float: none;
+			margin: 15px auto 20px;
 			text-align: center;
+			width: auto;
 			li {
 				display: inline-block;
 				margin:0 auto;
 				float:none;
 			}
-			ul.dropdown-menu {
-				text-align: left;
-				li {display:block;}
+			.bookApp {
+				float:none;
+				margin: 15px auto 0;
+			}
+		}
+	}
+}
+
+/*landscape phones and down */
+@media (max-width: 568px) {
+	header {
+		ul.nav-pills {
+			ul {
+				.dropdown-menu {
+					text-align: left;
+					li {display:block;}
+				}
+				.nav { width: auto; }
 			}
 		}
 	}
@@ -880,7 +912,6 @@ header {
 			text-align: center;
 		}
 	}
-	.sub-nav { display:none; }
 	#stylistPg .container {
 		.photo {
 			float: none;
@@ -895,7 +926,6 @@ header {
 		}
 	}
 	#services .service-content {
-		width:95%;
 		padding:2.5em 2.3em;
 		p {
 			text-align:center;
@@ -983,21 +1013,10 @@ header {
 	.banner { height:220px; }
 }
 
-@media (max-width: 500px) {
-	header ul.nav {width:auto;}
-}
 @media (max-width: 320px) {
 	header {
 		padding:1em 0; 
 		margin-top:15px;
-		ul.nav-pills {
-			width:auto;
-			margin-bottom: 15px;
-			li.bookApp {
-				margin-top:15px;
-				margin-left:0;
-			}
-		}
 	}
 	#header {
 		h1.title-head {
@@ -1065,11 +1084,10 @@ header {
 	}
 	#services {
 		.service-content.description, #services .service-content {
-			width:auto;
-			padding:1em;
+			padding: 1.5em;
 		}
 		.service-content {
-			width: auto;
+			padding: 1em 2em;
 			p:last-child {
 				margin-bottom:0;
 			}
