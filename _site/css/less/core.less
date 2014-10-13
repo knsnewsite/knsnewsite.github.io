@@ -53,10 +53,7 @@ body { font-family: "proxima-nova", Helvetica, sans-serif; }
 		border-top:1px solid #DFDFDF;
 	}
 }
-.container-fluid {
-		max-width: 960px;
-		margin: 0 auto;
-}
+.container-fluid { max-width: 960px; }
 
 // Page Headers
 #header {
@@ -121,6 +118,7 @@ header {
 		display: block;
 		width: 283px;
 		margin-top: 32px;
+		svg { height: 76px }
 	}
 	.nav {
 		margin: 42px 0 20px;
@@ -157,7 +155,7 @@ header {
 			&.book {
 				border:1px solid #ccc;
 				margin-top:0;
-				padding:6px 10px 3px;
+				padding:7px 10px 5px;
 				&:hover {
 					background:#eeeeee;
 					.icon-calendar { color:#777; }
@@ -204,7 +202,7 @@ header {
 	margin:3em auto 5em auto;
 	font-size:0.8em;
 	max-width:960px;
-	ul {margin-left: 0; padding-left: 0;}
+	.left { float: left; }
 	li {
 		list-style: none;
 		display:inline;
@@ -222,7 +220,7 @@ header {
 		cursor: default;
 		&:hover { .light-gray; }
 	}
-	p { float:right; }
+	.right { float: right; }
 }
 .sub-nav-touch {
 	display:none;
@@ -298,7 +296,6 @@ header {
 		margin: 3em auto 5em;
 	}
 	img {
-		float:left;
 		margin-bottom: 1em;
 		border:5px solid white;
 		box-shadow: 0 15px 12px -10px rgba(0,0,0,0.3);
@@ -398,8 +395,10 @@ header {
 	}
 }
 .service-nav-touch { display:none; }
-#serviceContent.span9 { float:right; }
-#services.container-fluid { padding:0 0 4em 0;}
+#serviceContent {
+	.clearfix;
+	margin: 3.5em 0;
+}
 .service-content {
 	color:#636567;
 	background:white;
@@ -428,12 +427,8 @@ header {
 	&.deep-conditioning { margin-top: 2em; }
 	.col-1, .col-2 { width:40%; }
 	.single-col {
-		width:100%;
 		text-transform: uppercase;
 		font-size:1.1em;
-		margin:-1em 0 1em;
-		margin:0 auto;
-		&.full { width:100%;}
 		p {
 			text-transform: uppercase;
 			line-height:3.9em;
@@ -509,6 +504,10 @@ header {
 	}
 }
 
+.bridal-pic {
+	margin-bottom: 20px;
+}
+
 // bridal lightbox (ekko)
 .ekko-lightbox-nav-overlay {
 	position: absolute;
@@ -540,6 +539,8 @@ header {
 	}
 }
 
+.ekko-lightbox .modal-dialog { margin: 1.5em; }
+
 .ekko-lightbox .glyphicon-chevron-left {
 	left: 0;
 	float: left;
@@ -556,12 +557,16 @@ header {
 
 .service-content .single-col .condition-service {
 	.clearfix;
-	margin-bottom:2em;
-	border-bottom:1px solid #eeeeee;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #eee;
+	padding: 0.5em 0 1.5em;
 	&:first-child {margin-top:2em;}
-	&:last-child {border-bottom:0; margin-bottom:0;}
-	img {float:left; width:235px; margin:0 2em 2em 0;}
-	div {float:right; width:334px;}
+	&:last-child {
+		border-bottom:0;
+		margin-bottom:0;
+		padding-bottom: 0;
+	}
+	img { max-width: 100%}
 	.service-details {
 		width:400px;
 		padding-left:250px;
@@ -606,10 +611,8 @@ header {
 	}
 	.social {
 		li {
-			display:inline-block;
-			margin:8px 15px 0 0;
 			.icon-twitter, .icon-facebook {
-				font-size: 45px;
+				font-size: 42px;
 				.light-gray;
 			}
 		}
@@ -620,11 +623,11 @@ header {
 		margin-top:2em;
 	}
 	.map {
-		float:right;
 		margin-top:1.5em;
 		img {
 			border:1px solid white;
 			.box-shadow(0 0 2px rgba(0,0,0,0.4));
+			width: 100%;
 		}
 	}
 }
@@ -673,22 +676,16 @@ header {
 @media (min-width: 768px) and (max-width: 900px) {
 	#services .nav { margin-left:35px; }
 	#serviceContent.span9 { margin:0 35px 0 0; }
-	.service-content .single-col { width:96%; }
-	#services .span3 { width:185px; }
 	.service-content .single-col .condition-service img {
 		float:none;
 		display: block;
 		margin:0 auto;
 	}
-	.service-content .single-col .condition-service div {
-		float:none;
-		width:100%;
-	}
 	#salon-artists { padding:2em; }
 }
 
-
-@media (max-width: 800px) {
+// Tablet
+@media (max-width: 768px) {
 	header { 
 		padding: 0 1.3em; 
 		h1 {margin-right:0;}
@@ -703,38 +700,23 @@ header {
 	}
 	#header .headContent { padding:1em 1.3em; }
 	#stylists .stylist-pics {
-		margin:0.5em auto;
-		width:88%;
-		padding:1.3em 3em;
-		.stylist {
-			width:24%;
-			&:first-child {margin-left:0;}
-			margin:0 0 1em 0;
-			&:nth-child(4) {margin-right:0;}
-			&:nth-child(8) {margin-right:0;}
-			&:nth-child(9) {margin-left:0;}
-			img {width:130px;}
-		}
+		padding:0;
 	}
 	#stylistPg {
 		padding:0 1.5em;
 		.contentWrapper { padding:1.3em; }
-		.content { width:inherit; }
-		.bio { margin-left:225px; }
-		img { width:185px; }
 	}
-	#salon .video { padding:2em 10%; }
 	#contact {
 		padding: 1em 1.4em 0;
-		box-sizing: border-box;
-		.map { width:300px; }
 	}
-	footer {
+	.footer {
 		margin-bottom:3em;
 		text-align: center;
-		.pull-left {float:none;}
-		p {float:none;}
+		.left {float:none;}
+		.right {float:none;}
 	}
+	.artist-callout { margin: 0 0 3em; }
+	#serviceContent { margin: 15px auto 15px; }
 }
 
 @media (max-width: 600px) {
@@ -760,21 +742,6 @@ header {
 			.yelp { left:40px; }
 			blockquote { font-size:1.1em; }
 		}
-	}
-	#stylists {
-		.stylist-pics {
-			width:auto;
-			padding:1.3em 4.5em;
-			border:0;
-			margin:0 auto;
-			.stylist {
-				width:30%;
-				margin-right:1.4em;
-				&:nth-child(3),&:nth-child(6),&:nth-child(9) { margin-right:0; }
-				&:nth-child(4), &:nth-child(8) { margin-right:1.4em; }
-			}
-		}
-		.stylist { width:26%; margin:0 1em 1em 1.1em; }
 	}
 	#stylistPg {
 		.sidebar {
@@ -914,15 +881,6 @@ header {
 		}
 	}
 	.sub-nav { display:none; }
-	#stylists {
-		.stylist-pics {
-			padding:1.3em 3.3em;
-		}
-		.stylist {
-			width:27%;
-			margin:0 0.8em 0.5em 1em;
-		}
-	}
 	#stylistPg .container {
 		.photo {
 			float: none;
@@ -1059,18 +1017,6 @@ header {
 			font-size:3em;
 		}
 		&.art-head .title-head span { display: none; }
-	}
-	#stylists {
-		.stylist-pics { 
-			width:auto;
-			.stylist {
-				display:block;
-				margin:0 auto;
-				width:auto;
-				img { width:185px; }
-				margin:0 !important;
-			}
-		}
 	}
 	#stylistPg {
 		img { float:none; }
