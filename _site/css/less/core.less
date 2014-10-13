@@ -203,6 +203,9 @@ header {
 		}
 	}
 }
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	background: #999;
+}
 .icon-twitter, .icon-facebook { font-size:30px; }
 
 // Footer 
@@ -325,7 +328,6 @@ header {
 	}
 	.bio {
 		margin:0 0 3em;
-		padding-left: 2em;
 		font-size: 1.2em;
 		line-height: 1.8em;
 	}
@@ -724,7 +726,6 @@ header {
 		padding:0;
 	}
 	#stylistPg {
-		padding:0 1.5em;
 		.contentWrapper { padding:1.3em; }
 	}
 	#contact {
@@ -1049,8 +1050,8 @@ header {
 			.title { display: block; }
 		}
 		.back {
-			display: inherit;
 			text-align: center;
+			margin-bottom: 1em;
 		}
 		.back-mobile { 
 			display: block;
