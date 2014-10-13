@@ -205,10 +205,13 @@ header {
 	margin:3em auto 5em auto;
 	font-size:0.8em;
 	max-width:960px;
-	.left { float: left; }
+	.left {
+		float: left;
+		padding-left: 0;
+	}
 	li {
 		list-style: none;
-		display:inline;
+		display:inline-block;
 		margin-right:10px;
 		border-right:1px solid #CCCCCC;
 		padding-right:10px;
@@ -717,7 +720,6 @@ header {
 		text-align: center;
 		.left {
 			float: none;
-			padding-left: 0;
 		}
 		.right {float:none;}
 		li { display: inline-block; margin-bottom: 5px; }
@@ -959,7 +961,7 @@ header {
 		}
 	}
 	footer {
-		ul.pull-left {
+		.left {
 			float:none;
 			text-align: center;
 			li {
@@ -1116,17 +1118,10 @@ header {
 			width:286px;
 		}
 	}
-	footer ul.pull-left li {
+	footer ul.left li {
 		display: block;
 		border-right:0;
 		margin-right:0;
 		padding-right:0;
-	}
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	header .brand {
-		background-position:0 -41px;
-		background-size:100%;
 	}
 }
