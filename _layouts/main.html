@@ -1,10 +1,10 @@
 {% include header.html %}
-{% if page.url == '/index.html' %}
+{% if page.slug == 'home' %}
 <section class="banner">
 	<p>Kent Newton Salon</p>
 </section>
 {% endif %}
-{% if page.url != '/index.html' %}
+{% if page.slug != 'home' %}
 <section class="pageContent">
 	{{ page.content }}
 </section>
