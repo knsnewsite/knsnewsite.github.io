@@ -100,7 +100,7 @@
     c-1.6,1.6-3.7,2.5-6.1,2.5s-4.5-0.9-6.1-2.5c-2.2-2.2-2.2-4.6-2.2-9.6c0-5,0-7.4,2.2-9.6c1.6-1.6,3.7-2.5,6.1-2.5s4.5,0.9,6.1,2.5 c2.2,2.2,2.2,4.6,2.2,9.6C345.4,116.9,345.4,119.3,343.1,121.5z M441.5,123.8h-2.4l-12.6-19v19H424v-23.7h2.4l12.6,18.9v-18.9h2.5 V123.8z"/>
 </svg></a>
                 <ul class="right nav nav-pills">
-                    <li class="dropdown">
+                    <li class="dropdown active" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/team/">Team</a></li>
@@ -108,7 +108,7 @@
                             <li><a href="/artists/">Artists</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown active" class="dropdown">
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="/services/">Services<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/services/">Haircuts</a></li>
@@ -126,42 +126,26 @@
             </header>
         </div>
     </section>
-<div id="header">
-	<div class="overlay">
+<div class="bio-bg">
+	<div id="stylistPg">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="headContent col-sm-12">
-					<h1  class="title-head">Styling</h1>
-				</div>
+				<a class="back col-xs-12" href="/team/">&laquo; Back to Team</a>
+				<section class="content">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+						<img src="../../images/team/ck-full.jpg" alt="team member">
+					</div>
+					<div class="bio col-sm-8">
+						<h1 class="title-head">Christopher Kezik</h1>
+						<span class="title">Stylist</span>
+						<p>Christopher is a Master Hairdresser with an impressive resume and has worked in some of the top salons in the Boston area. His editorial styling has appeared in many magazines, and his commitment to excellence can be seen in his attention to detail with both haircut and color. Christopher has held tenure as a national educator for AQUAGE for the past 9 years. His continuing education and personal work are sure to exceed expectations for all who seek high end professional service.</p>
+						<a class="back-mobile" href="/team/">&laquo; Back to Team</a>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
 </div>
-<section class="pageContent">
-	<div id="services" class="container-fluid">
-		<section id="serviceContent">
-			<div class="row">
-				<div class="col-sm-12">
-					<section class="service-content description">
-	<!-- <h3>Styling</h3> -->
-	<p>From a night out on the town to 10 bridesmaids the morning of your wedding, our stylists create smooth voluminous blow dries and classic updo’s for the important events in your life.  Your make-up artist is always welcome to set-up at the salon.</p>
-</section>
-<section class="service-content">
-	<div class="single-col">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-md-offset-2">
-        		<p>Blow Dry <span style="text-transform: none;">(Apprentice)</span><i><span class="cost">$35</span></i></p>
-            <p>Blow Dry <span style="text-transform: none;">(Stylist)</span><i>starts at<span class="cost">$40</span></i></p>
-        		<p>Updo <i>starts at<span class="cost">$70</span></i></p>
-          </div>
-        </div>
-	</div>
-</section>
-				</div>
-			</div>
-		</section>
-	</div>
-</section>
 <section class="footer container-fluid">
 	<div class="row">
 		<footer>
@@ -231,10 +215,3 @@
 	});
 </script>
 <script src="/js/bootstrap.min.js"></script>
-
-<style>
-	#header {
-		background: url(/images/services/header-services.jpg) no-repeat center center;
-		background-size:cover;
-	}
-</style>
