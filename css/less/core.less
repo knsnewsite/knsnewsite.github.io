@@ -61,7 +61,7 @@ body { font-family: "proxima-nova", Helvetica, sans-serif; }
 	height:134px;
 	border-bottom:1px solid #ffffff;
 	.overlay {
-		.box-shadow( 0 1px 0 rgba(255,255,255,0.3) inset);
+		box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset;
 		border-top:1px solid rgba(0,0,0,0.1);
 		border-bottom:1px solid rgba(0,0,0,0.1);
 		height:132px;
@@ -117,7 +117,7 @@ header {
 	.brand {
 		float: left;
 		display: block;
-		width: 283px;
+		width: 220px;
 		margin-top: 32px;
 		svg {
 			height: 76px;
@@ -126,7 +126,7 @@ header {
 	}
 	ul.right {
 		float: right;
-		width: 540px;
+		width: 660px;
 	}
 	.nav {
 		margin: 42px 0 20px;
@@ -155,11 +155,11 @@ header {
 			font-size:15px;
 			text-transform: uppercase;
 			&:hover {
-				border-radius:4x);
+				border-radius:4px;
 				background:none;
 				color:#565656;
 			}
-			&:focus { border-radius:4x); }
+			&:focus { border-radius:4px; }
 			&.book {
 				border:1px solid #ccc;
 				margin-top:0;
@@ -701,7 +701,7 @@ header {
 }
 
 // custom break for header
-@media (max-width: 865px) {
+@media (max-width: 920px) {
 	header {
 		.brand { margin-top: 0; }
 		ul.right {
@@ -864,7 +864,7 @@ header {
 }
 
 // break for header/nav
-@media (max-width: 620px) {
+@media (max-width:720px) {
 	.sub-nav { display:none; }
 	header {
 		.brand {
